@@ -5,7 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Sign Up Page</title>
-<script src="joinFunction.js"></script>
 </head>
 <body>
 	<h2>회원가입</h2>
@@ -31,4 +30,5 @@
 		<input type="reset" value="초기화">
 	</form>
 </body>
+<script src="joinFunction.js"></script>
 </html>
