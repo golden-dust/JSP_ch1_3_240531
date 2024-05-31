@@ -40,7 +40,8 @@
 	<% 
 		if (agree != null) {
 			for (String value: agree) {
-				out.println(value);
+				out.println(value); 
+				// println으로 출력해도 줄 바뀌지 않고 공백을 두고 이어짐
 			}
 		} else {
 			out.println("동의하지 않음");

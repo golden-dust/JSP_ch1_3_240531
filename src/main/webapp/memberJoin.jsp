@@ -5,11 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Sign Up Page</title>
-<script>
-	const func1 = () => {
-		
-	};
-</script>
+<script src="joinFunction.js"></script>
 </head>
 <body>
 	<h2>회원가입</h2>
