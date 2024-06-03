@@ -5,13 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Sign Up Page</title>
+<script type="text/javascript" src="joinFunction.js"></script>
 </head>
 <body>
 	<h2>회원가입</h2>
 	<hr>
-	<form action="joinOk.jsp" method="post">
+	<form action="joinOk.jsp" method="post" name="join">
 		아이디: <input type="text" name="id" maxlength="16"><br><br>
-		비밀번호: <input type="password" name="pw" maxlength="20"><br><br>
+		비밀번호: <input type="password" name="pw"  maxlength="20"><br><br>
 		이름: <input type="text" name="name"><br><br>
 		연락처: <select name="carrier" required>
 			<option value="">선택</option>
@@ -26,9 +27,8 @@
 		<input type="checkbox" name="r_agree" value="address"> 우편<br><br>
 		자기소개: <br>
 		<textarea name="intro" placeholder="간단히 자기를 소개해주세요" rows="5" cols="50"></textarea><br><br>
-		<input type="submit" value="가입하기">&nbsp;&nbsp;&nbsp;
+		<input type="submit" value="가입하기" onclick="checkForm()">&nbsp;&nbsp;&nbsp;
 		<input type="reset" value="초기화">
 	</form>
 </body>
-<script src="joinFunction.js"></script>
 </html>

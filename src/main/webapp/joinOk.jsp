@@ -7,7 +7,10 @@
 <title>Sign Up Processing...</title>
 </head>
 <body>
-	<% 	String id = request.getParameter("id");
+	<% 	
+		// request 객체 내 한글을 utf-8로 인코딩
+		request.setCharacterEncoding("utf-8");
+		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
 		String name = request.getParameter("name");
 		String mobile_carrier = request.getParameter("carrier");

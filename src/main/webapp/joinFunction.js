@@ -1,5 +1,5 @@
 function isNull(obj, msg) {
-	if (obj.value == '') {
+	if (obj.value == '' || obj.value == null) {
 		alert(msg);
 		obj.focus();
 		return true;
@@ -18,9 +18,9 @@ function isWrongType(obj, type) {
 
 function checkForm() {
 	const checked = true;
-	const values = [id, pw, name, carrier, mobile1, mobile2, mobile3, gender, r_agree, intro];
-	var f = document.lform;
-	for (const val of values) {
+	const fields = [id, pw, name, mobile1, mobile2, mobile3, gender, r_agree, intro];
+	var f = document.join;
+	for (const val of fields) {
 		let msg = `${val} 항목을 입력해주세요`;
 		if (isNull(f.val, msg)) checked=false;
 		if (checked == false) return false;
